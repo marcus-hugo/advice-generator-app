@@ -23,7 +23,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 2rem - 12.5px);
   position: relative;
 }
 
@@ -78,4 +78,14 @@ img {
 .card__btn:hover {
   cursor: pointer;
   box-shadow: 0 0 40px #53ffaa;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.attribution a {
+  color: #53ffaa;
 }/*# sourceMappingURL=styles.css.map */
