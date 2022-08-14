@@ -1,0 +1,84 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background: #202733;
+    color: #f5f5f5;
+    font-family: 'Manrope', sans-serif;
+}
+  
+*:focus {
+    outline: 3px dashed red;
+}
+  
+img {
+    max-width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.card {
+    max-width: 540px;
+    background: #313A48;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0 1rem;
+    padding: 0 24px;
+    text-align: center;
+    position: relative;
+    max-width: 516px;
+    height: 364px;
+
+    &__title {
+        font-size: .68rem;
+        color: #53ffaa;
+        margin-top: 40px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 3.5px;
+
+        @media (min-width: 600px) {
+            font-size: .81rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.5rem;
+        padding: 24px 0;
+
+        @media(min-width: 600px) {
+            font-size: 1.75rem;
+        }
+    }
+
+    &__icon {
+        position: relative;
+        bottom: 90px;
+    }
+
+    &__btn {
+        border: none;
+        padding: 20px;
+        border-radius: 50%;
+        background: #53ffaa;
+        position: relative;
+        bottom: 50px;
+    }
+
+    &__btn:hover {
+        cursor: pointer;
+        box-shadow: 0 0 40px #53ffaa;
+    }
+}
